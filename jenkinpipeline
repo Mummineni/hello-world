@@ -13,6 +13,16 @@ pipeline {
             }
         }
   
-        
+        stage('package') {
+            steps {
+                echo 'packages'
+            }
+        }
+ stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+ 
     }
 }
