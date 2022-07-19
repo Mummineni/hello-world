@@ -7,7 +7,12 @@ pipeline {
                 echo "this is a minimal pipeline"
             }
         }
-        
+       stage('test') { 
+            steps { 
+               echo 'testing' 
+            }
+        }
+  
         
     }
 }
